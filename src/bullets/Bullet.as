@@ -7,12 +7,11 @@ package bullets
 	import flash.geom.Rectangle;
 	import flash.media.Sound;
 	import flash.media.SoundChannel;
-	import sat_collision.CollidableEntity;
 	/**
 	 * ...
 	 * @author fabio
 	 */
-	public class Bullet extends CollidableEntity
+	public class Bullet extends Entity
 	{
 		public static const SHOT : String = "shot";
 		public static const MISSILE : String = "missile";

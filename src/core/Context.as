@@ -6,7 +6,7 @@ package core
 	
 	/**
 	 * ...
-	 * @author arthur e fabio
+	 * @author fabio
 	 */
 	public class Context extends MovieClip 
 	{

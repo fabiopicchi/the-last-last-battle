@@ -3,6 +3,7 @@ package ships
 	import cannons.Cannon;
 	import com.greensock.easing.Linear;
 	import com.greensock.TweenLite;
+	import core.Entity;
 	import flash.display.MovieClip;
 	import flash.display.Shape;
 	import flash.events.Event;
@@ -10,7 +11,6 @@ package ships
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	import flash.utils.Dictionary;
-	import sat_collision.CollidableEntity;
 	import ships.behaviours.Behaviour;
 	import ships.behaviours.Circular;
 	import ships.behaviours.EightShape;
@@ -22,7 +22,7 @@ package ships
 	 * ...
 	 * @author fabio
 	 */
-	public class Ship extends CollidableEntity 
+	public class Ship extends Entity 
 	{
 		protected var _arCannons : Vector.<Cannon> = new Vector.<Cannon> ();
 		protected var _health : Number;

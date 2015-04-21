@@ -1,0 +1,560 @@
+[
+    {
+        "trigger": "intro",
+        "arDialogs": [
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Finally Polveelo! We are ready to challenge the Evil Nezle!",
+                    "speakerStatus": "normal"
+                },
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Yes Sirena! Time for us to save all life, universe and everything!",
+                    "speakerStatus": "veryHappy"
+                },
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Yes! THIS WILL BE OUR LAST BATTLE!!!",
+                    "speakerStatus": "happy"
+                },
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Don't forget Sirena, use arrows to move your ship and Z to shoot!",
+                    "speakerStatus": "normal"
+                },
+                {
+                    "speaker": "s",
+                    "text": "Sirena: I know that already, I flew all the way here, Polveelo!",
+                    "speakerStatus": "happy"
+                },
+                {
+                    "speaker": "n",
+                    "text": "Nezle: HA! Sirena, I see you have found me... Welcome to die!",
+                    "speakerStatus": "happy"
+                }
+            ]
+        ]
+    },
+    {
+        "trigger": "victory",
+        "arDialogs": [
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: We did it Sirena! WE DID IT!!!",
+                    "speakerStatus": "veryHappy"
+                },
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Yes my friend! I wonder if the universe can be at peace now...",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Huzzah Polveelo! We DEFEATED!",
+                    "speakerStatus": "veryHappy"
+                },
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Hooray! The Evil Nezle has been destroyed!!!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: That was a tough one Polveelo, but it's all over now!",
+                    "speakerStatus": "veryHappy"
+                },
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Oh Sirena, what a fight! But we won!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Is it over Polveelo? Did we beat him?",
+                    "speakerStatus": "veryHappy"
+                },
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Sensors show the evil ship was destroyed! Victory is ours!!!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: You know Polveelo... I have a bad feeling about this...",
+                    "speakerStatus": "normal"
+                },
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: I wonder if the Evil Nezle is finally gone too Sirena...",
+                    "speakerStatus": "normal"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Sirena! Sirena! You did it!!!",
+                    "speakerStatus": "veryHappy"
+                },
+                {
+                    "speaker": "s",
+                    "text": "Sirena: We won! We are living proof that good always wins!!!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Are we safe Polveelo? Is it over?",
+                    "speakerStatus": "veryHappy"
+                },
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: I can't really see through all those space explosions Sirena...",
+                    "speakerStatus": "normal"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: The Evil Nezle is no more! Finally, we achieved victory Sirena!",
+                    "speakerStatus": "veryHappy"
+                },
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Wait Polveelo... Sensors are picking something up...",
+                    "speakerStatus": "normal"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Excelent work, Sirena! Polveelo out!",
+                    "speakerStatus": "veryHappy"
+                }
+            ]
+        ]
+    },
+    {
+        "trigger": "nextBoss",
+        "arDialogs": [
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: NOT SO FAST!",
+                    "speakerStatus": "angry"
+                },
+                {
+                    "speaker": "n",
+                    "text": "Nezle: HA! You destroyed another toy, but this isn't even my last form!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: NOT SO FAST!",
+                    "speakerStatus": "angry"
+                },
+                {
+                    "speaker": "n",
+                    "text": "Nezle: HA! You think you won, but you just activated my trap card!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: NOT SO FAST!",
+                    "speakerStatus": "angry"
+                },
+                {
+                    "speaker": "n",
+                    "text": "Nezle: HA! I was only using 60% of my real Power!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: NOT SO FAST!",
+                    "speakerStatus": "angry"
+                },
+                {
+                    "speaker": "n",
+                    "text": "Nezle: HA! This was but a scratch! My next ship will destroy you!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: NOT SO FAST!",
+                    "speakerStatus": "angry"
+                },
+                {
+                    "speaker": "n",
+                    "text": "Nezle: HA! Is that all you got?? Take this!!!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: NOT SO FAST!",
+                    "speakerStatus": "angry"
+                },
+                {
+                    "speaker": "n",
+                    "text": "Nezle: HA! This wasn't even the real me!!! Prepare yourself Sirena!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: NOT SO FAST!",
+                    "speakerStatus": "angry"
+                },
+                {
+                    "speaker": "n",
+                    "text": "Nezle: HA! I lost my script... But here's another ship!!!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: NOT SO FAST!",
+                    "speakerStatus": "angry"
+                },
+                {
+                    "speaker": "n",
+                    "text": "Nezle: HA! You have no chance to survive, make your time! KATS!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: NOT SO FAST!",
+                    "speakerStatus": "angry"
+                },
+                {
+                    "speaker": "n",
+                    "text": "Nezle: HA! Luckily, my engineers just finished this new Ship!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: NOT SO FAST!",
+                    "speakerStatus": "angry"
+                },
+                {
+                    "speaker": "n",
+                    "text": "Nezle: BUT HOW? This ship's power was over 9000! I'll use a better one...",
+                    "speakerStatus": "happy"
+                }
+            ]
+        ]
+    },
+    {
+        "trigger": "lastBossDefeat",
+        "arDialogs": [
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: NOW SIRENA! It's our chance! Fly into the ship's mouth, so we can destroy it from the inside!",
+                    "speakerStatus": "normal"
+                }
+            ]
+        ]
+    },
+    {
+        "trigger": "enemyDamage",
+        "arDialogs": [
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Keep at it Sirena! I see his ship breaking!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Keep shooting Sirena! Sensors show heavy damage being dealt!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: SHOOT! SHOOT MORE! I mean.. Nice shot Sirena!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: HAHAHAHA DIE NEZLE!! I mean.. Hooray Sirena!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Nice one Sirena! Right in his pancreas!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Wow! Nice shot!! At this pace, he has no chance!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Chargin more guns Sirena! Let's blow him up!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: I didn't know we were this strong! Keep at it!",
+                    "speakerStatus": "veryHappy"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: OUCH! What is this? You're using real bullets!",
+                    "speakerStatus": "defeated"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: I should have installed better shields!",
+                    "speakerStatus": "defeated"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: Hey, dont shoot that! I SAID DON'T!",
+                    "speakerStatus": "defeated"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: You just shot my videogames! You shall pay!!!",
+                    "speakerStatus": "defeated"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: My mother's vase! She's gonna be so mad!",
+                    "speakerStatus": "defeated"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: Computer's fried.. But I never liked it anyway!",
+                    "speakerStatus": "defeated"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: Hey! That's not fair, I can't dodge that!!!",
+                    "speakerStatus": "defeated"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: ARGH! My pancreas!",
+                    "speakerStatus": "defeated"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: OUCH! My kneecaps!",
+                    "speakerStatus": "defeated"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: UGHH! My EARS!",
+                    "speakerStatus": "defeated"
+                }
+            ],
+            [
+                {
+                    "speaker": "n",
+                    "text": "Nezle: ERGH! My left kidney!",
+                    "speakerStatus": "defeated"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: HA! Take this Nezle!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Another great hit! For Great Justice!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: BOOM! Take that!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Your evil is no good here Nezle! Take this!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: PEW PEW! C'mon Polveelo, let's get him!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: CHARGING MY LASERS! HAAA!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: More Rockets Polveelo! We're doing some good damage!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Huzzah! Right on his Kidney! Let's keep shooting!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Power the guns Polveelo! Send out every Zig!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Lok'tar Ogar! Victory or Death!",
+                    "speakerStatus": "happy"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: This is fun! PEW PEW PEW PEW! ",
+                    "speakerStatus": "happy"
+                }
+            ]
+        ]
+    },
+    {
+        "trigger": "playerDamage",
+        "arDialogs": [
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Oh no!",
+                    "speakerStatus": "sad"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: Argh!",
+                    "speakerStatus": "sad"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: EW!",
+                    "speakerStatus": "sad"
+                }
+            ],
+            [
+                {
+                    "speaker": "p",
+                    "text": "Polveelo: UGH!",
+                    "speakerStatus": "sad"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Oh no!",
+                    "speakerStatus": "surprise"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: Argh!",
+                    "speakerStatus": "surprise"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: EW!",
+                    "speakerStatus": "surprise"
+                }
+            ],
+            [
+                {
+                    "speaker": "s",
+                    "text": "Sirena: UGH!",
+                    "speakerStatus": "surprise"
+                }
+            ]
+        ]
+    }
+]

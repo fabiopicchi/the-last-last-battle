@@ -7,7 +7,7 @@ package core
 	
 	/**
 	 * ...
-	 * @author arthur e fabio
+	 * @author fabio
 	 */
 	public class Game extends Sprite 
 	{

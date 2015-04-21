@@ -5,7 +5,7 @@ package core
 	
 	/**
 	 * ...
-	 * @author arthur e fabio
+	 * @author fabio
 	 */
 	public class Entity extends MovieClip 
 	{

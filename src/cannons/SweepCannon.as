@@ -1,6 +1,5 @@
 package cannons 
 {
-	import bullets.Ray;
 	import ships.Ship;
 	/**
 	 * ...

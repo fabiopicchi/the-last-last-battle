@@ -2,7 +2,7 @@ package utils
 {
 	/**
 	 * ...
-	 * @author arthur e fabio
+	 * @author fabio
 	 */
 	public class BitFlagControl 
 	{
