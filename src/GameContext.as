@@ -3,9 +3,7 @@ package
 	import bullets.BackNForthBullet;
 	import bullets.Bullet;
 	import bullets.CircularBullet;
-	import bullets.HommingBullet;
 	import bullets.IBulletFactory;
-	import bullets.Ray;
 	import bullets.SenoidalBullet;
 	import cannons.Cannon;
 	import cannons.ICannonFactory;
@@ -17,6 +15,7 @@ package
 	import core.Context;
 	import flash.display.MovieClip;
 	import flash.events.Event;
+	import flash.geom.Rectangle;
 	import flash.media.SoundChannel;
 	import flash.utils.getDefinitionByName;
 	import flash.utils.getQualifiedClassName;
@@ -24,7 +23,6 @@ package
 	import ships.LastBoss;
 	import ships.Ship;
 	import utils.BitFlagControl;
-	import utils.JSONLoader;
 	
 	/**
 	 * ...
@@ -32,6 +30,9 @@ package
 	 */
 	public class GameContext extends Context implements ICannonFactory, IBulletFactory
 	{
+		[Embed(source = '../resources/enemies.json', mimeType='application/octet-stream')] public static const ENEMIES: Class;
+		[Embed(source = '../resources/dialogs.json', mimeType='application/octet-stream')] public static const DIALOGS: Class;
+		
 		private var _hud : HUD;
 		
 		private var _playerShip : Ship;
@@ -45,6 +46,9 @@ package
 		
 		private var _allyBullets : Vector.<Bullet> = new Vector.<Bullet> ();
 		private var _enemyBullets : Vector.<Bullet> = new Vector.<Bullet> ();
+		
+		// Area that the player ship must intersect to go inside the last boss' mouth
+		private var _lastBossTunnelArea:Rectangle = new Rectangle(775, 245, 125, 85);
 		
 		private var _arDialogs : Array;
 		private const DIALOG_INTERVAL : Number = 30;
@@ -63,11 +67,9 @@ package
 		public static const STRAFE : String = "strafe";
 		public static const SWEEP : String = "sweep";
 		
-		public static const HOMMING : String = "homming";
 		public static const CIRCULAR : String = "circular";
 		public static const BACKNFORTH : String = "backnforth";
 		public static const SIN : String = "sin";
-		public static const RAY : String = "ray";
 		
 		public static const ALLY : String = "ally";
 		public static const ENEMY : String = "enemy";
@@ -163,12 +165,12 @@ package
 				]
 			});
 			
-			var objData : Object = JSONLoader.loadFile("enemies.json");
+			var objData : Object = JSON.parse(new ENEMIES());
 			
 			_arEnemyShips = objData.ships;
 			_arEnemyCannos = objData.cannons;
 			
-			_arDialogs = (JSONLoader.loadFile("dialogs.json") as Array);
+			_arDialogs = (JSON.parse(new DIALOGS()) as Array);
 			
 			var playerCannonData : Object = 
 			{
@@ -332,10 +334,10 @@ package
 					
 					if (_enemyShip is LastBoss && _enemyShip.defeated)
 					{
-						if (_playerShip.x <= stage.stageWidth &&
-							_playerShip.x + _playerShip.width * _playerShip.scaleX >= 775 &&
-							_playerShip.y <= 330 &&
-							_playerShip.y + _playerShip.height * _playerShip.scaleY >= 245)
+						if (_playerShip.x <= _lastBossTunnelArea.x + _lastBossTunnelArea.width &&
+							_playerShip.x + _playerShip.width * _playerShip.scaleX >= _lastBossTunnelArea.x &&
+							_playerShip.y <= _lastBossTunnelArea.y + _lastBossTunnelArea.height &&
+							_playerShip.y + _playerShip.height * _playerShip.scaleY >= _lastBossTunnelArea.y)
 						{
 							loopTransition();
 						}
@@ -519,17 +521,6 @@ package
 			
 			switch (data.type)
 			{
-				case HOMMING:
-					b = getRecycledBullet(HommingBullet);
-					if (data.side == ENEMY)
-					{
-						(b as HommingBullet).setTarget(_playerShip);
-					}
-					else
-					{
-						(b as HommingBullet).setTarget(_enemyShip);
-					}
-					break;
 				case NORMAL:
 					b = getRecycledBullet(Bullet);
 					break;
@@ -541,10 +532,6 @@ package
 					break;
 				case SIN:
 					b = getRecycledBullet(SenoidalBullet);
-					break;
-				case RAY:
-					b = getRecycledBullet(Ray);
-					(b as Ray).setParentCannon(c);
 					break;
 			}
 			
@@ -560,9 +547,6 @@ package
 					case GameContext.BACKNFORTH:
 					case GameContext.SIN:
 						data.asset = getRecycledAsset (CircularShot);
-						break;
-					case GameContext.HOMMING:
-						data.asset = getRecycledAsset (Missile);
 						break;
 					default:
 						break;
@@ -580,9 +564,6 @@ package
 					case GameContext.BACKNFORTH:
 					case GameContext.SIN:
 						data.asset = getRecycledAsset (EvilCircularShot);
-						break;
-					case GameContext.HOMMING:
-						data.asset = getRecycledAsset (EvilMissile);
 						break;
 					default:
 						break;

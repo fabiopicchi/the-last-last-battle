@@ -1,0 +1,588 @@
+{
+    "ships": [		
+        {
+            "type": "normal",
+            "health": 10,
+            "xStart": 500,
+            "yStart": 200,
+            "side": "enemy",
+            "slotData": [
+                {
+                    "x": 87,
+                    "y": 1,
+                    "cannon": 1
+                },
+                {
+                    "x": 10,
+                    "y": 30,
+                    "cannon": 0
+                },
+                {
+                    "x": -3,
+                    "y": 47,
+                    "cannon": 0
+                },
+                {
+                    "x": 6,
+                    "y": 64,
+                    "cannon": 0
+                },
+                {
+                    "x": 80,
+                    "y": 93,
+                    "cannon": 1
+                }
+            ],
+            "behaviourData": {
+                "type": "upDown",
+                "period": 10,
+                "radius": 150,
+                "shootingPatterns": [
+                    [0,1,2,3,4],
+                    [],
+                    [1,2,3],
+                    [],
+                    [0,1,2,3,4],
+                    [],
+                    [1,2,3],
+                    []
+                ]
+            }
+        },
+
+		{
+            "type": "fang",
+            "health": 20,
+            "xStart": 500,
+            "yStart": 200,
+            "side": "enemy",
+            "slotData": [
+                {
+                    "x": 80,
+                    "y": 9,
+                    "cannon": 0
+                },
+                {
+                    "x": 51,
+                    "y": 34,
+                    "cannon": 8
+                },
+                {
+                    "x": 6,
+                    "y": 79,
+                    "cannon": 8
+                },
+                {
+                    "x": 42,
+                    "y": 111,
+                    "cannon": 8
+                },
+                {
+                    "x": 74,
+                    "y": 141,
+                    "cannon": 0
+                }
+            ],
+            "behaviourData": {
+                "type": "eightShape",
+                "period": 10,
+                "radius": 100,
+                "shootingPatterns": [
+                    [2],
+                    [1,2,3],
+                    [],
+                    [],
+                    [2],
+                    [1,2,3],
+                    [],
+                    []
+                ]
+            }
+        },
+		
+		{
+            "type": "skull",
+            "health": 30,
+            "xStart": 500,
+            "yStart": 200,
+            "side": "enemy",
+            "slotData": [
+                {
+                    "x": 15,
+                    "y": 40,
+                    "cannon": 1
+                },
+                {
+                    "x": 6,
+                    "y": 91,
+                    "cannon": 0
+                },
+                {
+                    "x": 129,
+                    "y": 54,
+                    "cannon": 3
+                },
+                {
+                    "x": 0,
+                    "y": 157,
+                    "cannon": 0
+                },
+                {
+                    "x": 36,
+                    "y": 188,
+                    "cannon": 1
+                }
+            ],
+            "behaviourData": {
+                "type": "circular",
+                "period": 10,
+                "radius": 100,
+                "shootingPatterns": [
+                    [0,2],
+                    [2],
+                    [2],
+                    [2],
+                    [2,4],
+                    [2],
+                    [2],
+                    [2]
+                ]
+            }
+        },
+
+		{
+            "type": "lastBoss",
+            "health": 40,
+            "xStart": 900,
+            "yStart": 220,
+            "side": "enemy",
+            "slotData": [
+                {
+                    "x": -216,
+                    "y": -173,
+                    "cannon": 0
+                },
+                {
+                    "x": -73,
+                    "y": -98,
+                    "cannon": 10
+                },
+				{
+                    "x": -73,
+                    "y": -98,
+                    "cannon": 11
+                },
+                {
+                    "x": -143,
+                    "y": -61,
+                    "cannon": 0
+                },
+                {
+                    "x": -18,
+                    "y": -15,
+                    "cannon": 8
+                },
+				{
+                    "x": -18,
+                    "y": 54,
+                    "cannon": 8
+                },
+				{
+                    "x": -18,
+                    "y": 123,
+                    "cannon": 8
+                },
+                {
+                    "x": -216,
+                    "y": 170,
+                    "cannon": 0
+                }
+            ],
+            "behaviourData": {
+                "type": "normal",
+                "period": 10,
+                "radius": 150,
+                "shootingPatterns": [
+                    [1,2,4],
+					[1,2],
+					[1,2],
+					[1,2],
+					[1,2,6],
+					[1,2]
+                ]
+            }
+        },
+		
+		{
+            "type": "normal",
+            "health": 30,
+            "xStart": 500,
+            "yStart": 200,
+            "side": "enemy",
+            "slotData": [
+                {
+                    "x": 87,
+                    "y": 1,
+                    "cannon": 6
+                },
+                {
+                    "x": 10,
+                    "y": 30,
+                    "cannon": 0
+                },
+                {
+                    "x": -3,
+                    "y": 47,
+                    "cannon": 7
+                },
+                {
+                    "x": 6,
+                    "y": 64,
+                    "cannon": 0
+                },
+                {
+                    "x": 80,
+                    "y": 93,
+                    "cannon": 5
+                }
+            ],
+            "behaviourData": {
+                "type": "upDown",
+                "period": 10,
+                "radius": 150,
+                "shootingPatterns": [
+                    [2],
+                    [],
+                    [0],
+                    [],
+                    [2],
+                    [],
+                    [4],
+                    []
+                ]
+            }
+        },
+
+        {
+            "type": "fang",
+            "health": 40,
+            "xStart": 500,
+            "yStart": 200,
+            "side": "enemy",
+            "slotData": [
+                {
+                    "x": 80,
+                    "y": 9,
+                    "cannon": 0
+                },
+                {
+                    "x": 51,
+                    "y": 34,
+                    "cannon": 0
+                },
+                {
+                    "x": 6,
+                    "y": 79,
+                    "cannon": 2
+                },
+                {
+                    "x": 42,
+                    "y": 111,
+                    "cannon": 0
+                },
+                {
+                    "x": 74,
+                    "y": 141,
+                    "cannon": 0
+                }
+            ],
+            "behaviourData": {
+                "type": "eightShape",
+                "period": 10,
+                "radius": 100,
+                "shootingPatterns": [
+                    [0,4],
+                    [0,4],
+                    [],
+                    [2],
+                    [2],
+                    [],
+                    [0,4],
+                    [0,4]
+                ]
+            }
+        },
+		{
+            "type": "skull",
+            "health": 50,
+            "xStart": 500,
+            "yStart": 200,
+            "side": "enemy",
+            "slotData": [
+                {
+                    "x": 15,
+                    "y": 40,
+                    "cannon": 8
+                },
+                {
+                    "x": 6,
+                    "y": 91,
+                    "cannon": 4
+                },
+                {
+                    "x": 129,
+                    "y": 54,
+                    "cannon": 4
+                },
+                {
+                    "x": 0,
+                    "y": 157,
+                    "cannon": 4
+                },
+                {
+                    "x": 36,
+                    "y": 188,
+                    "cannon": 8
+                }
+            ],
+            "behaviourData": {
+                "type": "circular",
+                "period": 10,
+                "radius": 100,
+                "shootingPatterns": [
+                    [0,2],
+                    [2],
+                    [2],
+                    [2],
+                    [2,4],
+                    [2],
+                    [2],
+                    [2]
+                ]
+            }
+        },
+		{
+            "type": "lastBoss",
+            "health": 40,
+            "xStart": 900,
+            "yStart": 220,
+            "side": "enemy",
+            "slotData": [
+                {
+                    "x": -216,
+                    "y": -173,
+                    "cannon": 12
+                },
+                {
+                    "x": -73,
+                    "y": -98,
+                    "cannon": 9
+                },
+                {
+                    "x": -143,
+                    "y": -61,
+                    "cannon": 9
+                },
+                {
+                    "x": -18,
+                    "y": -15,
+                    "cannon": 9
+                },
+				{
+                    "x": -18,
+                    "y": 54,
+                    "cannon": 9
+                },
+				{
+                    "x": -18,
+                    "y": 123,
+                    "cannon": 9
+                },
+                {
+                    "x": -216,
+                    "y": 170,
+                    "cannon": 12
+                }
+            ],
+            "behaviourData": {
+                "type": "normal",
+                "period": 10,
+                "radius": 150,
+                "shootingPatterns": [
+                    [0,6],
+					[0,6],
+					[0,1,6],
+					[0,6],
+					[0,6],
+					[0,2,6],
+					[0,6],
+					[0,6],
+					[0,3,6],
+					[0,6],
+					[0,6],
+					[0,4,6],
+					[0,6],
+					[0,6],
+					[0,5,6]
+                ]
+            }
+        }
+		
+    ],
+    "cannons": [
+        {
+            "type": "normal",
+            "direction": 3.14,
+            "fireRate": 5,
+            "bulletData": {
+                "type": "normal",
+                "damage": 0.1,
+                "speed": 500
+            }
+        },
+        {
+            "type": "normal",
+            "direction": 3.14,
+            "fireRate": 7,
+            "bulletData": {
+                "type": "normal",
+                "damage": 0.1,
+                "speed": 700
+            }
+        },
+        {
+            "type": "spread",
+            "direction": 3.14,
+            "fireRate": 1,
+            "nBullets": 5,
+            "spreadAngle": 1.1,
+            "bulletData": {
+                "type": "normal",
+                "damage": 0.1,
+                "speed": 200
+            }
+        },
+        {
+            "type": "sweep",
+            "direction": 3.14,
+            "fireRate": 15,
+            "sweepAngle": 6.28,
+            "period": 6,
+            "bulletData": {
+                "type": "normal",
+                "damage": 0.1,
+                "speed": 100
+            }
+        },
+        {
+            "type": "spread",
+            "direction": 3.14,
+            "fireRate": 1,
+            "nBullets": 20,
+            "spreadAngle": 6.28,
+            "bulletData": {
+                "type": "normal",
+                "damage": 0.1,
+                "speed": 100
+            }
+        },
+        {
+            "type": "spread",
+            "direction": 2.5,
+            "fireRate": 1,
+            "nBullets": 5,
+            "spreadAngle": 1.1,
+            "bulletData": {
+                "type": "normal",
+                "damage": 0.1,
+                "speed": 200
+            }
+        },
+		{
+            "type": "spread",
+            "direction": 3.78,
+            "fireRate": 1,
+            "nBullets": 5,
+            "spreadAngle": 1.1,
+            "bulletData": {
+                "type": "normal",
+                "damage": 0.1,
+                "speed": 200
+            }
+        },
+        {
+            "type": "spread",
+            "direction": 3.14,
+            "fireRate": 1,
+            "nBullets": 3,
+            "spreadAngle": 0.8,
+            "bulletData": {
+                "type": "normal",
+                "damage": 0.1,
+                "speed": 200
+            }
+        },
+		{
+            "type": "normal",
+            "direction": 3.14,
+            "fireRate": 5,
+			"aim": true,
+            "bulletData": {
+                "type": "normal",
+                "damage": 0.1,
+                "speed": 500
+            }
+        },
+		{
+            "type": "normal",
+            "direction": 3.14,
+            "fireRate": 7,
+            "bulletData": {
+                "type": "sin",
+                "damage": 0.1,
+                "speed": 200,
+				"period": 1,
+				"radius": 50,
+				"clockWise": false
+            }
+        },
+		{
+            "type": "spread",
+            "direction": 3.14,
+            "fireRate": 1,
+            "nBullets": 20,
+            "spreadAngle": 6.28,
+            "bulletData": {
+                "type": "backnforth",
+                "damage": 0.1,
+                "speed": 150,
+				"period": 1,
+				"radius": 50
+            }
+        },
+		{
+            "type": "spread",
+            "direction": 3.14,
+            "fireRate": 1,
+            "nBullets": 20,
+            "spreadAngle": 6.28,
+            "bulletData": {
+				"type": "normal",
+                "damage": 0.1,
+                "speed": 150
+            }
+        },
+		{
+            "type": "spread",
+            "direction": 3.14,
+            "fireRate": 1,
+            "nBullets": 20,
+            "spreadAngle": 3.14,
+            "bulletData": {
+                "type": "normal",
+                "damage": 0.1,
+                "speed": 50
+            }
+        }
+    ]
+}

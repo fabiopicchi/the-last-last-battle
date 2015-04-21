@@ -9,7 +9,7 @@ package bullets
 	public interface IBulletFactory 
 	{
 		function createBullet (objData : Object, c : Cannon) : Bullet
-		 function recycleBullet (b : Bullet) : void
+		function recycleBullet (b : Bullet) : void
 	}
 	
 }

@@ -35,8 +35,6 @@ package cannons
 		*/
 		protected var _fireRate : Number = 2;
 		protected var _fireCooldown : Number = 0;
-		protected var _continuous : Boolean = false;
-		protected var _continuousBullet : Bullet = null;
 		
 		//Sound played when cannon is fired
 		protected var _sfx : ShotFx = new ShotFx();
@@ -56,12 +54,9 @@ package cannons
 		
 		protected function shoot () : void
 		{
-			if (!_continuous)
-			{
-				_bulletData.shotDelay = -_fireCooldown;
-				_bulletData.direction = _direction;
-				_bulletFactory.createBullet(_bulletData, this);
-			}
+			_bulletData.shotDelay = -_fireCooldown;
+			_bulletData.direction = _direction;
+			_bulletFactory.createBullet(_bulletData, this);
 		}
 		
 		override public function update (dt : Number) : void
@@ -96,27 +91,20 @@ package cannons
 		
 		protected function onShooting (dt : Number) : void
 		{
-			if (!_continuous)
+			if (_fireCooldown > 0)
 			{
-				if (_fireCooldown > 0)
-				{
-					_fireCooldown -= dt;
-				}
-				else
-				{
-					shoot();
-					_fireCooldown += 1 / _fireRate;
-					if (_parentShip.side == GameContext.ALLY)
-					{
-						if (_sfxChannel) _sfxChannel.stop();
-						_sfxChannel = _sfx.play();
-						_sfxChannel.soundTransform = _sfxChannelTransform
-					}
-				}
+				_fireCooldown -= dt;
 			}
 			else
 			{
 				shoot();
+				_fireCooldown += 1 / _fireRate;
+				if (_parentShip.side == GameContext.ALLY)
+				{
+					if (_sfxChannel) _sfxChannel.stop();
+					_sfxChannel = _sfx.play();
+					_sfxChannel.soundTransform = _sfxChannelTransform
+				}
 			}
 		}
 		
@@ -125,15 +113,6 @@ package cannons
 			_direction = data.direction;
 			_fireRate = data.fireRate;
 			_bulletData = data.bulletData;
-			
-			if (data.bulletData.type == GameContext.RAY)
-			{
-				_continuous = true;
-			}
-			else
-			{
-				_continuous = false;
-			}
 			
 			rotation = _direction / Math.PI * 180;
 			
@@ -179,19 +158,12 @@ package cannons
 		
 		protected function startShooting () : void
 		{
-			if (_continuous)
-			{
-				_continuousBullet = _bulletFactory.createBullet(_bulletData, this);
-			}
+			
 		}
 		
 		protected function stopShooting () : void
 		{
-			if (_continuous && _continuousBullet)
-			{
-				_continuousBullet.removeSelf();
-				_continuousBullet = null;
-			}
+			
 		}
 		
 		public function activate() : void
